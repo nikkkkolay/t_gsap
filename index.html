@@ -15,9 +15,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             color: white;
             font-size: 2rem;
             position: relative;
+            padding: 0 10px;
         }
         .bg-dark {
             background-color: #1a1a1a;
@@ -25,12 +27,31 @@
         .bg-gray {
             background-color: #333;
         }
+        .star-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .star {
+            background: linear-gradient(126deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            width: 55px;
+            height: 55px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
     </style>
     <body>
         <section class="section bg-dark">
-            <div class="box purple fadeSlideTo">to</div>
-            <div class="box green fadeSlideFrom">from</div>
-            <div class="box blue fadeSlideFromTo">fromTo</div>
+            <h1>Lorem, ipsum.</h1>
+            <div class="star-wrapper">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
         </section>
         <section class="section bg-gray"></section>
         <section class="section bg-dark"></section>
